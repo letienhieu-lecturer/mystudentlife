@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Layout cho màn hình cài đặt (Settings)
+    Sử dụng ScrollView để cuộn nếu nội dung dài
+-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- LinearLayout chứa các thành phần giao diện, sắp xếp theo chiều dọc -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="24dp">
+
+        <!-- Nhãn và ô nhập tên sinh viên -->
+        <TextView android:text="Tên sinh viên" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <EditText android:id="@+id/editTextName" android:layout_width="match_parent" android:layout_height="wrap_content" />
+
+        <!-- Nhãn và nhóm chọn chủ đề (sáng/tối) -->
+        <TextView android:text="Chủ đề" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" />
+        <RadioGroup android:id="@+id/radioGroupTheme" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal">
+            <RadioButton android:id="@+id/radioLight" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Sáng" />
+            <RadioButton android:id="@+id/radioDark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tối" />
+        </RadioGroup>
+
+        <!-- Nhãn và spinner chọn cỡ chữ -->
+        <TextView android:text="Cỡ chữ" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" />
+        <Spinner android:id="@+id/spinnerFontSize" android:layout_width="match_parent" android:layout_height="wrap_content" />
+
+        <!-- Nhãn và switch bật/tắt thông báo -->
+        <TextView android:text="Thông báo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" />
+        <Switch android:id="@+id/switchNotification" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+
+        <!-- Nút lưu cài đặt -->
+        <Button android:id="@+id/buttonSave" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Lưu" android:layout_marginTop="24dp" />
+    </LinearLayout>
+</ScrollView>
+<!--
+    Các thành phần chính:
+    - EditText: nhập tên sinh viên
+    - RadioGroup: chọn chủ đề sáng/tối
+    - Spinner: chọn cỡ chữ
+    - Switch: bật/tắt thông báo
+    - Button: lưu cài đặt
+-->
