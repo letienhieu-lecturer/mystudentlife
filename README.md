@@ -15,7 +15,7 @@
 
 **Vị trí:** Giảng viên, Trường Đại Học Sư Phạm Kỹ Thuật Vinh
 
-**Email:** hieu@vuted.edu.vn
+**Email:** letienhieu@vute.edu.vn
 
 **Trường học:** Trường Đại Học Sư Phạm Kỹ Thuật Vinh
 
