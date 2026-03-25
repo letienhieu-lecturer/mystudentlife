@@ -84,9 +84,9 @@ fun MainScreen(onSettingsClick: () -> Unit, reloadFlag: Int) {
     // Xác định giá trị cỡ chữ dựa vào lựa chọn
     val fontSizeValue = when (fontSize) {
         "small" -> 16.sp
-        "medium" -> 20.sp
-        "large" -> 26.sp
-        else -> 20.sp
+        "medium" -> 26.sp
+        "large" -> 36.sp
+        else -> 26.sp
     }
 
     Scaffold(
